@@ -1,0 +1,41 @@
+{
+  "author": "Almog Melamed <radagaisus@gmail.com> (http://github.com/radagaisus/)",
+  "name": "round-to-human",
+  "version": "0.0.1",
+  "description": "Rounds a number to a nicer number people like to use",
+  "keywords": ["round", "number", "math", "round to human"],
+  "homepage": "https://github.com/radagaisus/round-to-human/",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/radagaisus/round-to-human.git"
+  },
+  "contributors": [
+    {
+      "name": "Almog Melamed",
+      "email": "radagaisus@gmail.com",
+      "web": "http://github.com/radagaisus/"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "bugs": {
+    "url": "http://github.com/radagaisus/round-to-human/issues/"
+  },
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": "latest",
+    "mocha": "latest"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha -R spec --ui bdd --require coffee-script --colors --compilers coffee:coffee-script/register test/*"
+  },
+  "bin": {}
+}
