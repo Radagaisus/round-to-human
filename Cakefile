@@ -1,7 +1,7 @@
 {spawn, exec} = require 'child_process'
 
-task 'build', ->
-	run 'coffee -c *.coffee test/**/*.coffee'
+task 'bake', ->
+	run 'coffee -c *.coffee'
 
 # run spawns a bash process, sends it a
 # command and hooks its stdout and sterr

@@ -50,13 +50,18 @@ module.exports = round_to_human = (n, options = {}) ->
 	n = Math.round(n)
 	# Return the rounded number if it's lesser than or equal to the threshold
 	return n if n <= options.threshold
-	# Square 10 by the number of digits in `n` minus the significant digits
+	# Get the exponent we use to get the `len` of the round up. We calculate it based
+	# on the number of digits in the number minus the significant digits required minus
+	# one.
 	exponent = n.toString().length - options.significant - 1
+	# Now, get the length, by squaring 10 with the exponent and multiplying by the multiple
 	len = Math.pow(10, exponent) * options.multiple
 	# Get the maximum between the multiple and the length, in case the digits in
 	# the number are lesser than or equal to the significant digits
 	len = Math.max(options.multiple, len)
-	# Round the number, plus the length, with the length as the multiple
+	# If the upwards option is set, and the number doesn't divide squarely in `len`
+	# Round the number plus half of the length with the length. Otherwise, just round
+	# the number itself in the length.
 	if options.upwards and n % len
 	then round(n + len / 2 - 0.1, len)
 	else round(n, len)

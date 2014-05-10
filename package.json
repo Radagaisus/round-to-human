@@ -1,7 +1,7 @@
 {
   "author": "Almog Melamed <radagaisus@gmail.com> (http://github.com/radagaisus/)",
   "name": "round-to-human",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Rounds a number to a nicer number people like to use",
   "keywords": ["round", "number", "math", "round to human"],
   "homepage": "https://github.com/radagaisus/round-to-human/",
