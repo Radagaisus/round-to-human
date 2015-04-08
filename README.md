@@ -1,6 +1,6 @@
 # Round to Human
 
-Will return a nice rounded number that's easily digestible by humans. This is useful, for example, to programmatically generate an ever increasing number of bonus points, without generating numbers that look "weird".
+Will return a nice rounded number that's easily digestible by humans. This is useful, for example, to programmatically generate an ever increasing number of bonus points, without generating numbers that looks "weird".
 
 
 ```
